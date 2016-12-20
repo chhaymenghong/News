@@ -4,5 +4,11 @@
 // The list of which env maps to which file can be found in `angular-cli.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  apiKey: 'ea3fe652fcac41fca1918dcd533b2a3b',
+  baseUrl: 'https://newsapi.org/v1/',
+  defaultSource: 'bbc-news',
+  defaultSort: 'latest',
+  articlePath: 'articles',
+  sourcePath: 'sources'
 };
