@@ -1,5 +1,5 @@
 // Expected json result to have all these properties
-interface ArticleJson {
+export interface ArticleJson {
   author: string;
   title: string;
   description: string;
@@ -17,7 +17,7 @@ export class Article {
   public urlToImage: string;
   public publishedAt: string;
 
-  public fromJson( json: ArticleJson ) {
+  static fromJson( json: ArticleJson ) {
     var article = Object.create( Article.prototype );
     Object.assign( article, json );
     return article;
