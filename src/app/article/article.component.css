@@ -1,0 +1,4 @@
+/* Use this selector to style the component itself*/
+:host {
+  padding: 14px
+}
