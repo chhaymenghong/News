@@ -10,14 +10,24 @@ import 'rxjs/add/operator/map';
 export class ArticleService {
   private _articleSubject: BehaviorSubject<Article[]> =
     new BehaviorSubject<Article[]>([]);
-  public articles$ = this._articleSubject.asObservable();
+  private _filterBy: BehaviorSubject<string> =
+    new BehaviorSubject<string>('');
+
+  public articles$: Observable<Article[]>;
 
   // Inject http module
   constructor( private http: Http ) {
+    this.articles$ = Observable.combineLatest( this._articleSubject, this._filterBy )
+      .map( ([articles, filterString]) => {
+        const reg = new RegExp( filterString, 'gi');
+        return articles.filter( article => {
+          return reg.test( article.title ) || reg.exec( article.description );
+        })
+      })
   }
 
-  public updateArticles() {
-    this._makeHttpRequest( environment.articlePath )
+  public updateArticles( sourceKey ) {
+    this._makeHttpRequest( environment.articlePath, sourceKey )
       .map( json => json.articles )
       .subscribe( listOfArticleJson => {
         var articles = listOfArticleJson.map( articleJson => Article.fromJson( articleJson ) );
@@ -25,10 +35,14 @@ export class ArticleService {
       } );
   }
 
-  private _makeHttpRequest( path:string, source = environment.defaultSource, sortBy = environment.defaultSort ) : Observable<any> {
+  public searchBy( title ) {
+    this._filterBy.next( title );
+  }
+
+  private _makeHttpRequest( path:string, sourceKey: string ) : Observable<any> {
     var params = new URLSearchParams();
     params.set('apiKey', environment.apiKey );
-    params.set('source', source );
+    params.set('source', sourceKey );
     // params.set('sortBy', sortBy );
     return this.http.get( `${environment.baseUrl}${path}`, { search: params } )
       .map( resp => resp.json() );
