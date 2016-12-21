@@ -70,7 +70,7 @@ var ArticleService = (function () {
     return ArticleService;
     var _a;
 }());
-//# sourceMappingURL=/Users/menghongchhay/Desktop/News/src/article.service.js.map
+//# sourceMappingURL=/Users/menghongchhay/Desktop/NewsSummary/src/article.service.js.map
 
 /***/ },
 
@@ -86,7 +86,7 @@ var environment = {
     articlePath: 'articles',
     sourcePath: 'sources'
 };
-//# sourceMappingURL=/Users/menghongchhay/Desktop/News/src/environment.prod.js.map
+//# sourceMappingURL=/Users/menghongchhay/Desktop/NewsSummary/src/environment.prod.js.map
 
 /***/ },
 
@@ -124,7 +124,7 @@ var AppComponent = (function () {
     ], AppComponent);
     return AppComponent;
 }());
-//# sourceMappingURL=/Users/menghongchhay/Desktop/News/src/app.component.js.map
+//# sourceMappingURL=/Users/menghongchhay/Desktop/NewsSummary/src/app.component.js.map
 
 /***/ },
 
@@ -177,7 +177,7 @@ var ArticleListComponent = (function () {
     return ArticleListComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=/Users/menghongchhay/Desktop/News/src/article-list.component.js.map
+//# sourceMappingURL=/Users/menghongchhay/Desktop/NewsSummary/src/article-list.component.js.map
 
 /***/ },
 
@@ -237,7 +237,7 @@ var SourceService = (function () {
     return SourceService;
     var _a;
 }());
-//# sourceMappingURL=/Users/menghongchhay/Desktop/News/src/source.service.js.map
+//# sourceMappingURL=/Users/menghongchhay/Desktop/NewsSummary/src/source.service.js.map
 
 /***/ },
 
@@ -274,7 +274,7 @@ if (__WEBPACK_IMPORTED_MODULE_3__environments_environment__["a" /* environment *
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_2__angular_core__["_27" /* enableProdMode */])();
 }
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_4__app___["a" /* AppModule */]);
-//# sourceMappingURL=/Users/menghongchhay/Desktop/News/src/main.js.map
+//# sourceMappingURL=/Users/menghongchhay/Desktop/NewsSummary/src/main.js.map
 
 /***/ },
 
@@ -341,7 +341,7 @@ var AppModule = (function () {
     ], AppModule);
     return AppModule;
 }());
-//# sourceMappingURL=/Users/menghongchhay/Desktop/News/src/app.module.js.map
+//# sourceMappingURL=/Users/menghongchhay/Desktop/NewsSummary/src/app.module.js.map
 
 /***/ },
 
@@ -379,7 +379,7 @@ var routes = [
     }
 ];
 var appRoutes = __WEBPACK_IMPORTED_MODULE_0__angular_router__["b" /* RouterModule */].forRoot(routes);
-//# sourceMappingURL=/Users/menghongchhay/Desktop/News/src/app.routes.js.map
+//# sourceMappingURL=/Users/menghongchhay/Desktop/NewsSummary/src/app.routes.js.map
 
 /***/ },
 
@@ -400,7 +400,7 @@ var Article = (function () {
     };
     return Article;
 }());
-//# sourceMappingURL=/Users/menghongchhay/Desktop/News/src/article.js.map
+//# sourceMappingURL=/Users/menghongchhay/Desktop/NewsSummary/src/article.js.map
 
 /***/ },
 
@@ -436,7 +436,7 @@ var ArticleComponent = (function () {
     ], ArticleComponent);
     return ArticleComponent;
 }());
-//# sourceMappingURL=/Users/menghongchhay/Desktop/News/src/article.component.js.map
+//# sourceMappingURL=/Users/menghongchhay/Desktop/NewsSummary/src/article.component.js.map
 
 /***/ },
 
@@ -450,7 +450,7 @@ var ArticleComponent = (function () {
 /* harmony namespace reexport (by used) */ __webpack_require__.d(exports, "a", function() { return __WEBPACK_IMPORTED_MODULE_1__app_module__["a"]; });
 
 
-//# sourceMappingURL=/Users/menghongchhay/Desktop/News/src/index.js.map
+//# sourceMappingURL=/Users/menghongchhay/Desktop/NewsSummary/src/index.js.map
 
 /***/ },
 
@@ -503,7 +503,7 @@ var SearchComponent = (function () {
     return SearchComponent;
     var _a, _b;
 }());
-//# sourceMappingURL=/Users/menghongchhay/Desktop/News/src/search.component.js.map
+//# sourceMappingURL=/Users/menghongchhay/Desktop/NewsSummary/src/search.component.js.map
 
 /***/ },
 
@@ -544,7 +544,7 @@ var SidenavComponent = (function () {
     return SidenavComponent;
     var _a;
 }());
-//# sourceMappingURL=/Users/menghongchhay/Desktop/News/src/sidenav.component.js.map
+//# sourceMappingURL=/Users/menghongchhay/Desktop/NewsSummary/src/sidenav.component.js.map
 
 /***/ },
 
@@ -562,7 +562,7 @@ var Source = (function () {
     };
     return Source;
 }());
-//# sourceMappingURL=/Users/menghongchhay/Desktop/News/src/source.js.map
+//# sourceMappingURL=/Users/menghongchhay/Desktop/NewsSummary/src/source.js.map
 
 /***/ },
 
@@ -618,7 +618,7 @@ var Source = (function () {
 
 
 
-//# sourceMappingURL=/Users/menghongchhay/Desktop/News/src/polyfills.js.map
+//# sourceMappingURL=/Users/menghongchhay/Desktop/NewsSummary/src/polyfills.js.map
 
 /***/ },
 
