@@ -20,6 +20,7 @@ export class Article {
   static fromJson( json: ArticleJson ) {
     var article = Object.create( Article.prototype );
     Object.assign( article, json );
+    article.author = article.author ? article.author : ' Unknown';
     return article;
   }
 }
