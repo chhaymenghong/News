@@ -20,7 +20,7 @@ const routes : Routes = [
     // root path
     {
       path: '',
-      redirectTo: 'news/reddit-r-all',
+      redirectTo: 'news/abc-news-au',
       pathMatch: 'full'
     },
     {
