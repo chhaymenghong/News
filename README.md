@@ -10,3 +10,6 @@ Technologies:
 # Live Demo
 For live demo, please use the following link.
 [Demo](https://chhaymenghong.github.io/News/)
+
+# Sample image
+[Image](https://raw.githubusercontent.com/chhaymenghong/News/gh-pages/dist/asset/demoPicture.png)
