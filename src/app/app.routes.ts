@@ -26,6 +26,10 @@ const routes : Routes = [
     {
       path : 'news/:sourceKey',
       component : ArticleListComponent
+    },
+    {
+        path : '/News/news/:sourceKey',
+        component : ArticleListComponent
     }
 ];
 
